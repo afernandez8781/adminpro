@@ -11,36 +11,41 @@ export class PromesasComponent implements OnInit {
 
 
 
-	this.contarTres().then(
-		mensaje => console.log('Termino!', mensaje)
-	)
-	.catch( error => console.error('Error en la promesa', error));
+    this.contarTres().then(
+      mensaje => console.log('Termino!', mensaje)
+     )
+     .catch( error => console.error('Error en la promesa', error));
 
   }
-
-
 
   ngOnInit() {
   }
 
+
   contarTres(): Promise<boolean> {
 
-	return new Promise( (resolve, reject) => {
+    return new Promise( (resolve, reject) => {
 
-		let contador = 0;
+    let contador = 0;
 
-		let intervalo = setInterval( () => {
-			contador += 1;
-			console.log( contador );
+    let itervalo = setInterval( () => {
 
-			if ( contador === 3 ) {
-				resolve( true );
-				//reject('simplemente un error');
-				clearInterval(intervalo);
-			}
-		}, 1000 );
-	});
+      contador += 1;
+      console.log( contador );
 
+      if ( contador === 3 ) {
+        resolve( true );
+        // reject('simplemente un error');
+        clearInterval(itervalo);
+      }
+
+    }, 1000 );
+
+
+  });
+
+    
   }
+
 
 }

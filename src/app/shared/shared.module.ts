@@ -10,23 +10,23 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
 
 @NgModule({
-	imports: [
-		RouterModule,
-		CommonModule
-	],
-	declarations: [
-		NopagefoundComponent,
-		HeaderComponent,
-		SidebarComponent,
-		BreadcrumbsComponent,
-		NopagefoundComponent
-	],
-	exports: [
-		NopagefoundComponent,
-		HeaderComponent,
-		SidebarComponent,
-		BreadcrumbsComponent,
-		NopagefoundComponent
-	]
+    imports: [
+        RouterModule,
+        CommonModule
+    ],
+    declarations: [
+        NopagefoundComponent,
+        HeaderComponent,
+        SidebarComponent,
+        BreadcrumbsComponent,
+        NopagefoundComponent
+    ],
+    exports: [
+        NopagefoundComponent,
+        HeaderComponent,
+        SidebarComponent,
+        BreadcrumbsComponent,
+        NopagefoundComponent
+    ]
 })
-export class SharedModule {}
+export class SharedModule { }
