@@ -27,6 +27,8 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { ProfileComponent } from './profile/profile.component';
+import { UsauriosComponent } from './usaurios/usaurios.component';
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
 
 @NgModule({
     declarations: [
@@ -39,7 +41,9 @@ import { ProfileComponent } from './profile/profile.component';
         AccoutSettingsComponent,
         PromesasComponent,
         RxjsComponent,
-        ProfileComponent
+        ProfileComponent,
+		UsauriosComponent,
+		ModalUploadComponent
     ],
     exports: [
         DashboardComponent,
