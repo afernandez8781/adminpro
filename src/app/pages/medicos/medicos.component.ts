@@ -12,7 +12,7 @@ export class MedicosComponent implements OnInit {
 	medicos: Medico[] = [];
 
   constructor(
-	  public _medicoService: MedicoService;
+	  public _medicoService: MedicoService
   ) { }
 
   ngOnInit() {
